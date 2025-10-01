@@ -11,21 +11,21 @@ FROM restaurants
 WHERE distance_miles <= 5 AND rating >= 4.0
 ORDER BY rating DESC, distance_miles ASC;
 
-/* restraunts within 2.0 miles*/
+/* restaurants within 2.0 miles*/
 SELECT name, distance_miles 
 FROM restaurants
-WHERE distance_miles < 2.0
+WHERE distance_miles <= 2.0
 ORDER BY distance_miles;
 
-/* Top 5 based on rating */
+/* Top 3 based on rating */
 SELECT * 
 FROM restaurants
 ORDER BY rating DESC
-LIMIT 5;
+LIMIT 3;
 
 /* Tax calculation  */
 SELECT name, avg_cost, avg_cost*(1.075) as cost_with_tax
-From restaurants;
+FROM restaurants;
 
 /* How many restaurants are there per cuisine, highest count first? */
 SELECT cuisine, COUNT(*) AS restaurant_count
