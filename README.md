@@ -55,7 +55,7 @@ Query 5:
 
       /* Tax calculation  */
       SELECT name, avg_cost, avg_cost*(1.075) as cost_with_tax
-      From restaurants;
+      FROM restaurants;
 
   Result:
 
