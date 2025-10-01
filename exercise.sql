@@ -1,10 +1,4 @@
 
-/* How many restaurants are there per cuisine, highest count first? */
-SELECT cuisine, COUNT(*) AS restaurant_count
-FROM restaurants
-GROUP BY cuisine
-ORDER BY restaurant_count DESC;
-
 /* What are the 5 cheapest restaurants based on avg_cost */
 SELECT name, cuisine, avg_cost
 FROM restaurants
@@ -23,8 +17,6 @@ FROM restaurants
 WHERE distance_miles < 2.0
 ORDER BY distance_miles;
 
-
-
 /* Top 5 based on rating */
 SELECT * 
 FROM restaurants
@@ -35,4 +27,8 @@ LIMIT 5;
 SELECT name, avg_cost, avg_cost*(1.075) as cost_with_tax
 From restaurants;
 
-
+/* How many restaurants are there per cuisine, highest count first? */
+SELECT cuisine, COUNT(*) AS restaurant_count
+FROM restaurants
+GROUP BY cuisine
+ORDER BY restaurant_count DESC;
