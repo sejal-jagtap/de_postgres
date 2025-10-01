@@ -1,6 +1,5 @@
 # de_postgres
 
-Queries:
 <img width="666" height="169" alt="query1" src="https://github.com/user-attachments/assets/72765c3d-1f17-4530-b4f9-7e157592bc4d" />
 
 <img width="692" height="188" alt="query2" src="https://github.com/user-attachments/assets/abd6162f-4741-4361-bfcd-7682d75c20b4" />
